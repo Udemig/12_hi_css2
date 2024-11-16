@@ -1,0 +1,339 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  background-color: chocolate;
+  padding: 20px 0;
+  display: flex;
+  gap: 5px;
+  margin: 40px 0;
+}
+.ctn-1 {
+  justify-content: start;
+}
+.ctn-11 {
+  justify-content: end;
+}
+.ctn-2 {
+  background-color: red;
+  justify-content: center;
+}
+
+.kutu {
+  background-color: antiquewhite;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.ctn-3 {
+  background-color: black;
+  justify-content: space-between;
+}
+
+.ctn-4 {
+  background-color: crimson;
+  justify-content: space-around;
+}
+
+.ctn-5 {
+  background-color: green;
+  justify-content: space-evenly;
+}
+
+.title {
+  background-color: dimgray;
+  color: #fff;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  /* text-align: İçeriğin yatay hizalanmasını ayarlamak için kullanılır.Metinler için kullanılır. 
+  
+  Text-align'ın sahip olduğu bazı değerler:
+
+left/start ==> Sol'a  hizalamak için kullanılır.
+
+
+right/end ==> Sağ'a hizalamak için kullanılır.
+
+
+center ==> Orta ya hizalamak için kullanılır.
+
+justify ==> Satırları tam hizalamak için kullanılır.
+  
+  
+  */
+}
+
+.image {
+  float: none;
+  /* 
+  float ==> Bir öğeyi sol yada sağa hizalamak için kullanılır.Sol ve sağ şeklinde iki değer alır.
+  
+  */
+  /* Display özelliği Html deki bir elemanın nasıl gözükeceğini belirler.
+  
+  
+  block ==> Elemanın bulunduğu satırı kaplamasını sağlar.
+
+  inline ==>Elemanın bulunduğu satırda içeriği kadar alan kaplamasını sağlar.
+
+
+  flex ==> Elemanları esnek şekilde yönetmek için kullanılır.
+
+
+  none ==> Elemanı ekranda kaldırmak için kullanılır.
+  
+  */
+  display: block;
+}
+
+.title-3 {
+  background-color: burlywood;
+  font-size: 44px;
+  /* padding-left: 44px;
+  padding-right: 34px;
+  padding-top: 56px;
+  padding-bottom: 23px; */
+  padding: 56px 34px 23px 44px;
+  display: inline;
+}
+
+.first-span {
+  background-color: aqua;
+  display: block;
+}
+
+.second-span {
+  display: none;
+  background-color: lightcoral;
+}
+
+.title-2 {
+  background-color: darkred;
+  color: #fff;
+  font-size: 34px;
+  padding: 30px;
+}
+
+.tt-2 {
+  visibility: hidden;
+  /* visibility:Bir elemanın görünürlüğünü kontrol etmek için kullanılır.
+  
+  visible ==> Öğeyi görünür kılar.
+
+
+  hidden ==> Öğeyi gizler.
+  
+  
+  */
+}
+
+/* 
+! visibility: hidden; ve display: none; aynı işlevi yapıyor gözüksede arada önemli bir fark bulunur.Display:none bir elemanı ekranda söküp atar o eleman hiç olmamış gibi davranır.Visibility: hidden ise elemanın görünürlüğünü ayarlar.O eleman ekranda vardır fakat gözükmez.
+
+
+
+*/
+
+.kapsayıcı {
+  background-color: darkslateblue;
+  padding: 30px;
+}
+
+.eleman {
+  background-color: coral;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Html elemanlarını pozisyonlamak için position özelliği kullanılır.
+
+position:static ==> Elemanın default değeridir.
+
+position:fixed ==> Elemanı ekranın belirli bir kısımına sabitlemek için kullanılır.Bu özellik kullanıldğında ekranın neresine sabitleneceğinide söylememiz gerekir.Yukarıya aşağıay gibi.Ve bu noktaları gerek px gerek % olarak verebiliriz.
+
+
+*/
+
+.e-1 {
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: unset;
+  width: 100%;
+  z-index: 2;
+}
+.e-2 {
+  background-color: yellow;
+  position: fixed;
+  top: 3%;
+  margin: unset;
+  right: 5%;
+  z-index: 3;
+  /* z-index bir elemanın diğer elemanlarla üst üste gelmesi durumunda kimin yukarıda kalacağını belirlemek için kullanılır.z-index değeri büyük olan eleman üstte kalır.  */
+}
+
+.e-3 {
+  background-color: purple;
+  color: white;
+  font-size: 22px;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  z-index: 1;
+}
+
+.e-4 {
+  height: 200px;
+  position: relative;
+  /* Bu elemana içerisindeki elemanların kendisine göre hizalanacağını bildirdik */
+}
+/* 
+
+position:fixed ile ekranın belirli bir yerinde elemanlarımızı hizalayabiliriz.
+
+Ama bir kapsayıcının içerisindeki elemanları bu kapsayıcıya göre hizalamamız gerekirse bunun için şu adımlar izlenir.
+
+1-) Kapsayıcı elemana position:relative verilir.
+
+2-) Kapsayıcı içerideki elemana position:absolute verilir.
+
+3-) Kapsayıcı içerisindeki elemanı nereye hizalamak istiyorsak bunun konumunu belirtiriz.
+
+
+
+*/
+
+.kutucuk {
+  background-color: seagreen;
+  font-size: 20px;
+  margin: 5px 0;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.ktk-1 {
+  background-color: #fff;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: unset;
+}
+.ktk-2 {
+  background-color: chartreuse;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: unset;
+}
+
+.ktk-3 {
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: unset;
+}
+
+.ktk-4 {
+  background-color: deeppink;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: unset;
+}
+.ktk-5 {
+  background-color: crimson;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Bir elemanın kapsayıcına göre tam ortaya gelmesini istersek bunun için  top: 50%; left: 50%; kodları kullanılır.Fakat bu kodlama bir tık hatalı çalışır.Bunun sebebi css'in elemanın orta noktasının yerine elemanın kenarlarını baz alarak elemanı ötelemesidir.Bu sebeble tam ortaya hizalama yapılamamış olur.Bunu düzeltmek için  transform: translate(-50%, -50%); kullanılır.Bu sayede kapsayının tam ortasına hizalama yapılır.
+  */
+}
+
+.ktk-6 {
+  background-color: goldenrod;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+
+.ktk-7 {
+  background-color: forestgreen;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.ktk-8 {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.e-5 {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  opacity: 0.4;
+  /* opacity bir elemanın opaklığını ayarlamak için kullanılır.Bu değer 0 ile 1 arasında değer alır.0 değerinde tamamen saydam bir yapı elde edilirken 1 değerinde tamamen opak bir yapı elde edilir. */
+}
+
+.flex-kapsayıcı {
+  background-color: cornflowerblue;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+}
+
+.box {
+  background-color: crimson;
+  flex-basis: 200px;
+  flex-shrink: 4;
+  flex-grow: 8;
+}
+
+.box-1 {
+  background-color: orange;
+  flex-basis: 300px;
+  flex-shrink: 3;
+  flex-grow: 5;
+}
+
+.flex-kapsayıc-1 {
+  background-color: aqua;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+}
+
+.flex-kapsayıc-1 .box {
+  background-color: green;
+  flex-basis: 33%;
+}
+
+.flex-kapsayıc-1 .box-1 {
+  background-color: goldenrod;
+  flex-basis: 33%;
+}
+
+.flex-kapsayıc-1 .box-2 {
+  flex-basis: 33%;
+
+  background-color: indigo;
+}
+
+/* Html elemanlarına üzerine gelindiğinde aktarılmak istenen özellikler hover ile sağlanır.Bu yapı üzerine mouse geldiğinde elemana aktarılacak özellikleri 'elemanAdı' sonrasında ':hover' yazdıktan sonra {} içerisinde çalışması istenen özellikler yazılarak sağlanır.  */
+.ktk-5:hover {
+  background-color: gray;
+  color: green;
+  font-size: 44px;
+  cursor: pointer; /* İmlecin durumunu belirler.El şeklinde olmasını sağlar. */
+}

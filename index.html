@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css-2</title>
+    <!-- * Css Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- *  justify-content: Flexbox yapısı aktif olan bir kapsayıcı içerisinde elemanları  nasıl hizalanacğını belirler.
+     
+    left/start ==> Elemanları sol kısımda hizalar.Bu değer default değerdir.
+
+
+    right/end ==> Elemanları sağ kısımda hizalar.
+
+
+    center ==> Elemanları kapsayıcının ortasına hizalar.
+
+    space-between==>  Kapsayıcı içerisindeki elemanlardan en soldakini en sola en sağdakini en sağa hizalar.Arada kalan elemanlarıysa sol ve sağdaki elemanların arasındaki boşluğa yerleştirir.
+
+    space-around ==> Kapsayıcı içerisindeki en soldaki ve en sağdaki elemanı   space-between deki gibi en sol ve en sağa yapıştırmak yerine sol ve sağdan eşit boşluk bırakarak hizalar.
+
+    space-evenly ==> Kapsayıcı içerisindeki elemanların herbiri sol ve sağdan eşit boşluk bırakarak hizalar.
+
+    -->
+    <h1>Display:flex</h1>
+    <div class="container">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex justify-content: start(left);</h1>
+    <div class="container ctn-1">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex justify-content: end(right);</h1>
+    <div class="container ctn-11">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex && justify-content: center;</h1>
+    <div class="container ctn-2">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex && justify-content:space-between;</h1>
+    <div class="container ctn-3">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex && justify-content:space-around;</h1>
+    <div class="container ctn-4">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1>Display:flex && justify-content:space-evenly;</h1>
+    <div class="container ctn-5">
+      <div class="kutu">Eleman-1</div>
+      <div class="kutu">Eleman-2</div>
+      <div class="kutu">Eleman-3</div>
+      <div class="kutu">Eleman-4</div>
+      <div class="kutu">Eleman-5</div>
+      <div class="kutu">Eleman-6</div>
+      <div class="kutu">Eleman-7</div>
+      <div class="kutu">Eleman-8</div>
+      <div class="kutu">Eleman-9</div>
+      <div class="kutu">Eleman-10</div>
+    </div>
+    <h1 class="title">Udemig Akademi</h1>
+
+    <br /><br /><br /><br /><br />
+    <h3 class="title-3">Yazılım</h3>
+    <h3 class="title-3">Yazılım</h3>
+
+    <br /><br /><br />
+
+    <img class="image" src="https://picsum.photos/500/200" alt="" />
+
+    <span class="first-span">Html</span>
+    <span class="second-span">Css</span>
+    <!-- Bu elemana display:none verildi.Bu elemanı ekrandan kaldırdı. -->
+    <span class="first-span">Html-1</span>
+
+    <h2 class="title-2">Css Dersi</h2>
+    <h2 class="title-2 tt-2">Css Dersi</h2>
+    <!-- Bu elemana visibility: hidden verildi.Bu sayede ekrandaki görünürlüğü gizlendi -->
+
+    <h2 class="title-2">Css Dersi</h2>
+
+    <div class="kapsayıcı">
+      <div class="eleman e-1">Eleman-1</div>
+      <div class="eleman e-2">Eleman-2</div>
+      <div class="eleman e-3">Eleman-3</div>
+      <div class="eleman e-4">
+        <div class="kutucuk ktk-1">Kutucuk-1</div>
+        <div class="kutucuk ktk-2">Kutucuk-2</div>
+        <div class="kutucuk ktk-3">Kutucuk-3</div>
+        <div class="kutucuk ktk-4">Kutucuk-4</div>
+        <div class="kutucuk ktk-5">Kutucuk-5</div>
+        <div class="kutucuk ktk-6">Kutucuk-6</div>
+        <div class="kutucuk ktk-7">Kutucuk-7</div>
+        <div class="kutucuk ktk-8">Kutucuk-8</div>
+      </div>
+      <div class="eleman e-5">
+        <h1 class="text">Eleman-5</h1>
+      </div>
+      <div class="eleman e-6">Eleman-6</div>
+      <div class="eleman e-7">Eleman-7</div>
+      <div class="eleman e-8">Eleman-8</div>
+      <div class="eleman e-9">Eleman-9</div>
+      <div class="eleman e-10">Eleman-10</div>
+    </div>
+
+    <!-- Flex-basis && Flex-shrink && Flex-Grow
+     
+    
+    Flex-basis ==> Bir flex öğesinin esnek yapıya kavuşmadan önce alacağı varsayılan boyutu tanımlamak için kullanılır.
+    
+    
+
+    Flex-shrink ==> Bir flex öğesinin flex yapısı küçüldüğünde ne kadar küçülebileceğini belirlemek için kullanılır.Bu özelliğin değeri ne kadar büyükse eleman o kadar çok küçülür.
+
+
+
+    Flex-Grow ==> Bir flex öğesinin flex yapısı büyüdüğünde ne kadar genişleyebileceğini belirlmek için kullanılır. 
+    
+    ! Özetle: Flex-basis ==> Bir elemanın başlangıç boyutunu tanımlar; Flex-shrink ==> Bir elemanın kapsayıcısına bağlı olarak ne kadar küçülebileceğini belirler; Flex-Grow==> Bir elemanın kapsayıcısına bağlı olarak ne kadar büyüyebileceğini belirler
+    
+    -->
+    <div class="flex-kapsayıcı">
+      <div class="box">Box-1</div>
+      <div class="box box-1">Box-2</div>
+    </div>
+    <div class="flex-kapsayıc-1">
+      <div class="box">Box-1</div>
+      <div class="box box-1">Box-2</div>
+      <div class="box box-2">Box-2</div>
+    </div>
+  </body>
+</html>
